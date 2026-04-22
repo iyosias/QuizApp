@@ -1,9 +1,9 @@
 function Footer() {
   return (
-    <footer className="bg-teal-300">
-      <div className="flex flex-row justify-center items-center">
-        <p>&copy; Copyright {`${new Date().getFullYear()}`} Nested Reality</p>
-      </div>
+    <footer className="bg-indigo-500 h-12 flex justify-center items-center">
+      <p className="font-brand-header text-white">
+        &copy; Copyright {`${new Date().getFullYear()}`} Nested Reality
+      </p>
     </footer>
   );
 }

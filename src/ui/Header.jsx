@@ -14,7 +14,7 @@ function Header() {
   }, [location.pathname]);
 
   return (
-    <header className="absolute inset-x-0 top-0 z-50 bg-white">
+    <header className="inset-x-0 top-0 z-50 bg-white">
       <nav
         aria-label="Global"
         className="flex items-center justify-between p-6 lg:px-8"
@@ -36,11 +36,11 @@ function Header() {
         <div className="hidden md:flex md:gap-x-12">
           <NavBar type="row" />
         </div>
-        {/* <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <Link className="text-2xl font-semibold text-gray-900">
+        <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+          <Link className="text-2xl font-brand-header text-gray-900">
             Log in <span aria-hidden="true">&rarr;</span>
           </Link>
-        </div> */}
+        </div>
       </nav>
       <Dialog
         open={mobileMenuOpen}
@@ -63,14 +63,14 @@ function Header() {
           <div className="mt-6 flow-root">
             <div className="-my-6  divide-y divide-gray-500/10">
               <NavBar type="col" />
-              {/* <div className="py-6">
+              <div className="py-6">
                 <Link
                   to="/"
-                  className="-mx-3 block rounded-lg px-3 py-2.5 text-xl font-semibold text-gray-900 hover:bg-gray-50 "
+                  className="-mx-3 block rounded-lg px-3 py-2.5 text-xl font-brand-header text-gray-900 hover:bg-gray-50 "
                 >
                   Log in
                 </Link>
-              </div> */}
+              </div>
             </div>
           </div>
         </DialogPanel>

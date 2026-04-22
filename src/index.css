@@ -1,1 +1,18 @@
 @import "tailwindcss";
+
+@theme {
+  --font-brand-header: "Anta", sans-serif;
+  --font-brand-subheader: "Commissioner ", sans-serif;
+  --font-brand-paragraph: "Merriweather Sans", sans-serif;
+
+  --spacing-percentage-2-3: 66.666667%;
+}
+
+@layer components {
+  body {
+    background-color: #eaf6fd;
+  }
+  .btn {
+    @apply font-brand-header md:text-2xl lg:text-xl p-3  aria-[current=page]:text-white aria-[current=page]:p-3 aria-[current=page]:bg-indigo-600 aria-[current=page]:rounded-2xl xl:text-2xl font-light text-gray-900 hover:text-blue-300;
+  }
+}
