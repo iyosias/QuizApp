@@ -5,7 +5,10 @@
   --font-brand-subheader: "Commissioner ", sans-serif;
   --font-brand-paragraph: "Merriweather Sans", sans-serif;
 
+  --spacing-percentage-1-2: 50%;
   --spacing-percentage-2-3: 66.666667%;
+  --spacing-percentage-3-4: 75%;
+  --spacing-percentage-5-6: 83.333333%;
 }
 
 @layer components {
